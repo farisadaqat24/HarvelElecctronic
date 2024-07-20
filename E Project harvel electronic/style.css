@@ -1,0 +1,1412 @@
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-navbar .icons{
+    margin-top: 13px;
+    margin-right: 15px;
+}
+.icons a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.icons a img{
+    margin-bottom: 3px;
+}
+.icons a:hover{
+    color: hsl(214, 30%, 74%);
+}
+@media screen and (max-width:400px){
+    .top-navbar a{
+        font-size: 13px;
+    }
+    .top-navbar a img{
+        width: 15px;
+    }
+    .top-navbar p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:320px){
+    .top-navbar a{
+        font-size: 10px;
+    }
+    .top-navbar a img{
+        width: 13px;
+    }
+    .top-navbar p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:318px){
+    .top-navbar a{
+        font-size: 8px;
+        margin-left: 0;
+    }
+    .top-navbar a img{
+        width: 10px;
+        margin-left: 0;
+    }
+    .top-navbar p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+#navbar{
+    background-color: rgb(25, 119, 148);
+}
+#logo{
+    margin-left: 15px;
+    color: hsl(214, 30%, 74%);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+#logo span{
+    color: #f8ce11;
+}
+#logo #span1{
+    font-size: 30px;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item{
+    margin-left: 10px;
+}
+.nav-item .nav-link{
+    color: white;
+    margin-left: 2px;
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    color: #000000;
+}
+.dropdown-menu li a{
+    color: white;
+    transition: 0.5s ease;
+}
+.dropdown-menu li a:hover{
+    background-color: rgb(25, 119, 148);
+    color: #ffc800;
+}
+
+.home{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #a9a9a92b;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 300px;
+}
+.home .img img{
+    margin-top: 20px;
+    width: 500px;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-top: 20px;
+}
+.content h1{
+    color:rgb(25, 119, 148);
+    font-weight: bold;
+    margin-left: 23px;
+    font-size: 55px;
+    text-shadow: -1px 1px 1px black;
+}
+.content h1 span{
+    color: rgb(25, 119, 148);
+    text-shadow: 1px 1px 1px black;
+}
+#span2{
+    color:#f8ce11;
+}
+.content p{
+    margin-left: 103px;
+}
+.btn{
+    margin-left: 225px;
+}
+.btn button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color:rgb(25, 119, 148);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.btn button:hover{
+    
+    color: black;
+    border: none;
+    background-color: #f8ce11;
+    box-shadow: 0 0 5px #f8ce11,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0  150px #f5b500;
+}
+@media screen and (max-width:1200px){
+    .home{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .home{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .home{
+        height: 110vh;
+    }
+}
+@media screen and (max-width:420px){
+   .content h1{
+    font-size: 45px;
+   }
+}
+@media screen and (max-width:320px){
+   .content h1{
+    font-size: 36px;
+   }
+}
+#product-cards{
+    margin-top: 100px;
+}
+#product-cards h1{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #ffc800;
+}
+#product-cards .card h3{
+    font-size: 20px;
+    color: black;
+}
+#product-cards .card p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: black;
+}
+.star i{
+    margin-left: 5px;
+    font-size: 13px;
+}
+.checked{
+    color: #ffc800;
+}
+#product-cards .card h2{
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+#product-cards .card h2 span{
+    float: right;
+    color: black;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    #product-cards .card h3{
+        font-size: 15px;
+    }
+}
+#offer{
+    margin-top: 100px;
+}
+#offer i{
+    font-size: 32px;
+    color: black;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
+   
+  }
+  
+  footer {
+    background-color:rgb(25, 119, 148);
+    color:rgb(233, 223, 223);
+    padding: 10px 0;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0; 
+    align-items: center;       
+  }
+  .footer-links li {
+    margin-bottom: 10px;
+    
+  }
+  .footer-links li a {
+    color: rgb(253, 253, 253);
+    text-decoration: solid;
+    text-align: center;
+  }
+  .footer-links li a:hover {
+    text-decoration: underline;
+    color: #f8ce11;
+  }
+  footer i {
+margin-left: 5px; 
+} 
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+  }                                     
+
+.copy{
+text-align: center;
+background-color: rgb(78, 72, 72);
+color: #fff;
+padding: 10px; 
+text-decoration:solid ;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.social-icons li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.social-icons a {
+  display: block;
+  color: rgb(233, 241, 241); /* Change color of icons */
+  font-size: 24px; /* Adjust icon size */
+}
+
+.social-icons a:hover {
+  color: #f8ce11; /* Change color on hover */
+}
+#about{
+    margin-top: 30px;
+}
+#about h3{
+    font-weight: bold;
+    color: rgb(25, 119, 148);
+    text-shadow: 0px 1px 1px rgb(185, 230, 25);
+}
+#about p {
+    font-style: italic;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f8ce11;
+  }
+  
+  .show {
+    display: block;
+  }
+
+/* contact */
+#contact{
+    margin-top: 50px;
+    
+}
+#contact .card{
+    height: 80px;
+    /* margin-top: 5px; */
+    margin-bottom: 40px;
+    box-shadow: rgba(4, 4, 228, 0.692) 0px 0px 15px 0px;
+    background-color: rgb(25, 119, 148);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#contact .card i{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#contact .card h6{
+    margin-left: 10px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: hsl(214, 30%, 74%);
+}
+#contact .card h6:hover{
+    color: #f8ce11;
+}
+
+/* contact */
+
+/* map */
+h1{
+    color:rgb(25, 119, 148);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-weight: bold;
+   text-align: center;
+    font-size: 55px;
+    text-shadow: -1px 1px 1px black;
+  
+}
+h1:hover{
+    color: gray;
+}
+.messagebtn button{
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid rgb(67 0 86);
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.messagebtn button:hover{
+    background-color: rgb(25, 119, 148);
+    color: white;
+}
+#side2{
+    background-color: white;
+    height: 70vh;
+    border-radius: 10px;
+    justify-content: center;
+}
+#side2 h3{
+    margin-top: 30px;
+    color: rgb(25, 119, 148);
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+}
+.input2 input{
+    margin-top: 15px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid rgb(25, 119, 148);
+}
+.input2 input ::placeholder{
+    font-weight: bold;
+}
+#btnlogin{
+    padding-top: 10px;
+}
+#btnlogin a{
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgb(25, 119, 148);
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-shadow: 0px 0px 1px black;
+}
+#side2 p{
+    margin-top: 10px;
+}
+@media screen and (max-width:991px){
+    .input2 input{
+        width: 250px;
+    }
+}
+@media screen and (max-width:765px){
+    .input2 input{
+        width: 260px;
+    }
+    #side2{
+        height: 60vh;
+    }
+}
+
+.footer-custom-align h5 {
+    padding: 0 0 0 8px;
+}
+footer {
+    padding: 100px 0 40px;
+}
+
+
+
+footer h5 {
+    margin-bottom: 30px;
+}
+.footercustom-2-box {
+    padding-left: 80px;
+}
+
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-15px);
+    transition: 0.5s ease;
+}
+
+
+
+#c p{
+    font-weight: bold;
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn3 button:hover{
+   
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0  150px #f5b500;
+}
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+    }
+}
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    color:rgb(25, 119, 148);
+    /* background-color:rgb(25, 119, 148) ; */
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn4 button:hover{
+    
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0  150px #f5b500;
+}
+
+#other-cards{
+    margin-top: 20px;
+    width: 80%;
+    height: 50%;
+    cursor: pointer;
+}
+#other-cards .card{
+    background-color: #aa6c6c2b;
+}
+#other-cards .card h3{
+    margin-top: 30px;
+    color: rgb(25, 119, 148);
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+#other-cards .card h5{
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid black;
+    width: 220px;
+}
+#other-cards .card p{
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+#shopnow{
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    color: white;
+    background-color:rgb(25, 119, 148);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+#shopnow:hover{
+    
+    color: #000000;
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0  150px #f5b500;
+}
+#product-cards h1{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #ffc800;
+}
+
+@media screen and (max-width:1000px){
+    #other-cards .card h3{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    #other-cards .card h5{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    #other-cards .card p{
+        margin-top: 0px;
+    }
+    #shopnow{
+        margin-top: 0px;
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+#contact{
+    margin-top: 50px;
+}
+#contact h2{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+#message button{
+    width: 150px;
+    height: 38px;
+    background-color: #f0cf15;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner2{
+    width: 100%;
+    height: 65vh;
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+.banner2 .img{
+    flex: 1 1 400px;
+}
+.banner2 .img img{
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.banner2 .banner2-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+}
+.banner2-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content h1 span{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #f0cf15;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content h2{
+    font-size: 50px;
+    color: black;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.bannerchangecontent:after{
+    content: ' ';
+    font-size: 50px;
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    animation: bannercontent 10s infinite linear;
+}
+@keyframes bannercontent{
+    /* {content: "Refrigerator";} */
+    /* 20%{content: "Laptop";}
+    40%{content: "Headphone";}
+    60%{content: "Water dispenser";}
+    80%{content: "Washing Machine";}
+    100%{content: "Air conditioner";} */
+}
+.banner2-content p{
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content h3{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content .btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f0cf15;
+    color: black;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+@media screen and (max-width:990px){
+    .banner2{
+        height: 100vh;
+    }
+    .banner2 .img img{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width:450px){
+    .banner2 .img img{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .banner2 .banner2-content h1{
+        font-size: 30px;
+    }
+    .banner2 .banner2-content h1 span{
+        font-size: 30px;
+    }
+}
+
+/* banner2 */
+
+banner{
+    width: 100%;
+    height: 65vh;
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+.banner .img{
+    flex: 1 1 400px;
+}
+.banner .img img{
+    width: 65%;
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+.banner .banner-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+}
+.banner-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner-content h1 span{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #f0cf15;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner-content p{
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner-content h5{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner-content .btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f0cf15;
+    color: black;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+@media screen and (max-width:990px){
+    .banner{
+        height: 100vh;
+    }
+    .banner .img img{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width:450px){
+    .banner .img img{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .banner .banner-content h1{
+        font-size: 30px;
+    }
+    .banner .banner-content h1 span{
+        font-size: 30px;
+    }
+}
+
+
+
+
+.banner3{
+    width: 100%;
+    height: 65vh;
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+.banner3 .img{
+    flex: 1 1 400px;
+}
+.banner3 .img img{
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.banner3 .banner3-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+}
+.banner3-content h1{
+    /* font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+   margin: auto; */
+   text-align: left;
+   margin-left: 35px;
+   font-size: 50px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner3-content h1 span{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #f8ce11;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner3-content h2{
+    font-size: 50px;
+    color: black;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.bannerchangecontent:after{
+    content: ' ';
+    font-size: 50px;
+    color: #f8ce11;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    animation: bannercontent 10s infinite linear;
+}
+@keyframes bannercontent{
+    0%{content: "Refrigerator";}
+    20%{content: "Laptop";}
+    40%{content: "Headphone";}
+    60%{content: "Water dispenser";}
+    80%{content: "Washing Machine";}
+    100%{content: "Air conditioner";}
+}
+.banner3-content p{
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner3-content h3{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner3-content .btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f8ce11;
+    color: black;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner3-content .btn:hover{
+    background-color:rgb(25, 119, 148);
+    color: white;
+}
+
+@media screen and (max-width:990px){
+    .banner3{
+        height: 100vh;
+    }
+    .banner3 .img img{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width:450px){
+    .banner3 .img img{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .banner3 .banner3-content h1{
+        font-size: 30px;
+    }
+    .banner3 .banner3-content h1 span{
+        font-size: 30px;
+    }
+}
+
+
+#product-cards h1{
+    margin-top: 50px;
+    font-weight: bold;
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+}
+#product-cards .card{
+    background-color: #a9a9a929;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i img{
+    cursor: pointer;
+    background-color: #f0cf15;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-right: 100px;
+    margin-bottom: 5%;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+
+}
+#product-cards .card h3{
+    color: rgb(25, 119, 148);
+    text-shadow: 1px 1px 1px black;
+}
+.checked{
+    color: #f0cf15;
+}
+#product-cards h5{
+    font-size: 20px;
+    margin-left: 40px;
+}
+#product-cards h5 span{
+    float: right;
+}
+
+
+#shopnowtwo{
+    width: 130px;
+    /* height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    letter-spacing: 3px; */
+    margin-left: 35px;
+    color: white;
+    background-color:rgb(25, 119, 148);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    
+}
+#shopnowtwo:hover{
+    background-color: #f8ce11;
+    color: #000000;
+}
+
+
+.banner4{
+    width: 100%;
+    height: 65vh;
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+.banner4 .img{
+    flex: 1 1 400px;
+}
+.banner4 .img img{
+    width: 55%;
+    margin-left: 180px;
+    margin-bottom: 90px;
+}
+.banner4 .banner4-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+}
+.banner4-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner4-content h1 span{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #f0cf15;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner4-content p{
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner4-content h2{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner4-content .btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f0cf15;
+    color: black;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner4-content .btn:hover{
+    background-color: rgb(25, 119, 148);
+    color: white;
+}
+@media screen and (max-width:990px){
+    .banner4{
+        height: 100vh;
+    }
+    .banner4 .img img{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width:450px){
+    .banner4 .img img{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .banner4 .banner4-content h1{
+        font-size: 30px;
+    }
+    .banner4 .banner4-content h1 span{
+        font-size: 30px;
+    }
+}
+html{
+    scroll-behavior: smooth;
+  }
+
+  .all-category{
+    margin-top: 10px;
+    margin-left: 36px;
+}
+.all-category button{
+    border: 1px solid black;
+    margin-top: 20px;
+}
+.all-category a{
+    background-color: #f5b500;
+}
+
+/* all category */
+
+
+
+
+
+
+#slider{
+    margin-top: 100px;
+}
+
+.collections {
+    background: #f7f7f7;
+}
+
+
+/* .all-category */
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgba(124, 86, 30, 0.822);
+    margin-left: 50px;
+    margin-right: 10px;
+    
+}
+.nav-link:hover{
+    color: rgb(250, 153, 7);
+    box-shadow: #000000;
+   
+    
+}
+/* .all-category */
+
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/Electronic-Gadgets-Transparent-PNG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+.banner-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+.banner-content h1{
+    color: whitesmoke;
+}
+.change-content:after{
+    content: '';
+    color: #f5b500;
+    text-shadow: 2px 1px 5px black;
+    font-weight: bold;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Washing Machine";}
+    10%{content: "Led Tv";}
+    20%{content: "Air Conditioner";}
+    30%{content: "Water Dispenser";}
+    40%{content: "Refrigerator";}
+    50%{content: "Washing Machine";}
+    60%{content: "Led Tv";}
+    70%{content: "Air Conditioner";}
+    75%{content: "Water Dispenser";}
+    80%{content: "Refrigerator";}
+   
+}
+
+
+.search-box{
+	position: absolute;
+	margin-top: 50px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background:#353b48;
+	height: 60px;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.search-box:hover .search-txt{
+	width: 100px;
+	padding: 0 6px;
+}
+
+.search-box:hover .search-btn{
+	background: #f5b500;
+}
+
+
+.search-btn{
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #f5b500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.search-txt{
+	border:none;
+	outline: none;
+	background: none;
+	float: left;
+	padding: 0;
+	color:#fff;
+	font-size: 16px;
+	line-height: 40px;
+	width: 0;
+	transition: width 400ms;
+
+}
+
+.gallery{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color:rgb(25, 119, 148);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgb(255, 169, 8);}
+
+
+    
+/* newslater */
+#newslater{
+    margin-top: 90px;
+}
+#newslater h3{
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: rgb(25, 119, 148);
+}
+.input{
+    margin-top: 30px;
+}
+.input input{
+    width: 350px;
+    height: 36px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border:  1px solid black;
+    padding-left: 5px;
+}
+#subscribe{
+    width: 200px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(25, 119, 148);
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+    margin-bottom: 40px;
+}
+#subscribe:hover{
+    color: #000000;
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0  150px #f5b500;
+}
+@media screen and (max-width:465px){
+    .input input{
+        width: 280px;
+    }
+    #subscribe{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:250px){
+    .input input{
+        width: 150px;
+    }
+    #subscribe{
+        width: 150px;
+    }
+}
+/* newslater */
+
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background-color: #353b48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnn{
+  padding: 10px 60px;
+  background: #000000;
+  border: 0;
+} */
+
+
+.fact-item {
+    transition: .5s;
+}
+
+.fact-item:hover {
+    margin-top: -10px;
+    background: #faaa15 !important;
+    box-shadow: 0 0 25px rgb(25, 119, 148);
+}
+
+
+
+.offcanvas-menu ul {
+    width: 100%;
+}
+
+.offcanvas-menu ul li {
+    list-style: none;
+}
+
+.offcanvas-menu ul li a {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-weight: 100;
+    /* line-height: 1.5; */
+    background: rgb(25, 119, 148);
+    display: block;
+    text-decoration: none;
+    padding: 10px 0 10px ;
+    transition: all .4s ease;
+    text-align: center;
+}
+
+.offcanvas-menu ul li a:hover {
+    background: rgb(255, 169, 8);
+    color: black;
+    transition: 1s;
+}
+
+.offcanvas-title{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.btnp{
+    margin-left: 380px;
+    background: transparent;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 30px;
+    box-shadow: #000000;
+    border: solid rgb(21, 96, 119);
+    transition: 1.2s;
+    
+   
+
+}
+
+.btnp:hover{
+    background-color: rgb(255, 169, 8);
+    color: #000000;
+}
+@media screen and (max-width:400px){
+    .btnp{
+        font-size: 13px;
+        margin-left: 30px
+
+    }
+    
+}

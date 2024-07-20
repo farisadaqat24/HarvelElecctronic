@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+  body{
+    background-color: gainsboro;
+  }
+  
+
+    /* body{
+        margin: 0;
+        padding:0;
+        justify-content: center;
+         align-items: center;
+         min-height: 100vh;
+         font-family:'jost' sans-serif;
+         /* background: linear-gradient(to bottom, #0f0c29,#302b63,#24243e); */
+    /* }  */
+    .main{
+        margin: auto;
+        padding:0;
+        justify-content: center;
+         align-items: center;
+        width: 450px;
+        height: 600px;
+        background: rgb(25, 119, 148);
+        overflow: hidden;
+        background-color:green no-repeat center / cover ;
+        border-radius: 10px;
+        box-shadow: 5px 20px 50px rgb(25, 119, 148);
+    }
+    #chk{
+        display: none;
+    }
+    .signup{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    label{
+        color: #fff;
+        font-size: 2.3em;
+        justify-content:center;
+        display: flex;
+        margin: 60px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+    input{
+        width: 60%;
+        height: 35px;
+        background: #e0dede;
+        justify-content: center;
+        display: flex;
+        margin: 20px auto;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+    button{
+        width: 60%;
+        height: 40px;
+        margin: 10px auto;
+        justify-content: center;
+        display: block;
+        color: #fff;
+        background:rgb(135, 164, 173);
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        transition: .2s ease-in;
+        cursor: pointer;
+    }
+    button:hover{
+        background:rgb(211, 198, 11) ;
+    }
+    .login{
+        height: 460px;
+        background: #eee;
+        border-radius: 60%/ 10%;
+        transform: translateY(-180px);
+        transition: .8s ease-in-out;
+    }
+    .login label{
+        color:rgb(25, 119, 148);
+        transform: scale(.6);
+    }
+    #chk:checked~.login{
+        transform: translateY(-500px);
+    }
+    #chk:checked~.login label{
+        transform: scale(1);
+    }
+    #chk:checked~.login label{
+        transform: scale(.6);
+    }
+    .error {
+        color: rgb(218, 169, 11);
+        text-align: center;
+        margin: auto;
+    }
+
+</style>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar " id="navbar" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html" id="logo"><span id="span1">H</span>arvel <span>Electronic</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="./images/menu.png" alt="" width="30px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c50;">
+              <li><a class="dropdown-item" href="refrigerator.html">REFRIGERATOR</a></li>
+              <li><a class="dropdown-item" href="machine.html">WASHING MACHINE</a></li>
+              <li><a class="dropdown-item" href="Water dispancer.html"> WATER DISPENSER</a></li>
+              <li><a class="dropdown-item" href="led.html">LED TV</a></li>
+              <li><a class="dropdown-item" href="ac.html">AIR CONDITIONER</a></li>
+              <li><a class="dropdown-item" href="microwave.html">MICROWAVE OVEN</a></li>
+          
+              
+             
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="icons">
+            <!-- <a href="login.html"><img src="./images/register.png" alt="" width="18px">Login</a> -->
+            <a href="login.html"><img src="./images/register.png" alt="" width="18px">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- navbar -->
+
+
+    <!-- navbar -->
+    <div class="main">
+      <input type="checkbox" id="chk" aria-hidden="true">
+      <div class="signup">
+         <form onsubmit="return validateForm('register')">
+             <label for="chk" aria-hidden="true">Register</label>
+             <input type="text" id="registerFirstName" name="username" placeholder="user name">
+             <span id="registerFirstNameError" class="error"></span>
+
+             <input type="email" id="registerEmail" name="email" placeholder="email">
+             <span id="registerEmailError" class="error"></span>
+
+             <input type="password" id="registerPassword" name="pswd" placeholder="password">
+             <span id="registerPasswordError" class="error"></span>
+
+             <button type="submit">Register</button>
+         </form>
+      </div>
+      <div class="login">
+         <form onsubmit="return validateForm('login')">
+             <label for="chk" aria-hidden="true">log in</label> 
+             <input type="email" id="loginEmail" name="email" placeholder="email"  required="">
+             <span id="loginEmailError" class="error"></span>
+
+             <input type="password" id="loginPassword" name="pswd" placeholder="password" required="">
+             <span id="loginPasswordError" class="error"></span>
+
+             <button type="submit">Login</button>
+         </form>
+      </div>
+ </div>
+ 
+ <div class="container" id="offer">
+   <div class="row">
+     <div class="col-md-3 py-3 py-md-0">
+       <i class="fa-solid fa-cart-shopping"></i>
+       <h3>Free Shipping</h3>
+       <p>On order over 20000 RUPEES</p>
+     </div>
+     <div class="col-md-3 py-3 py-md-0">
+       <i class="fa-solid fa-rotate-left"></i>
+       <h3>Free Returns</h3>
+       <p>Within 20 days</p>
+     </div>
+     <div class="col-md-3 py-3 py-md-0">
+       <i class="fa-solid fa-truck"></i>
+       <h3>Fast Delivery</h3>
+       <p>World Wide</p>
+     </div>
+     <div class="col-md-3 py-3 py-md-0">
+       <i class="fa-solid fa-thumbs-up"></i>
+       <h3>Big choice</h3>
+       <p>For you</p>
+     </div>
+   </div>
+ </div>
+
+ <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+ <footer>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-4">
+         <h5>About Us</h5>
+         <p>Electronicsforu.com is the digital avatar of Electronics For You (EFY) magazine. EFY was launched in 1969, and is counted amongst the leading publications in the fields of electronics and technology—across the globe.</p> <br>
+         <p>
+           <a href="tel:03152416541"><i class="fas fa-phone"></i> Call us</a>
+           <a href="mailto:farwasadaqat8@gmail.com"><i class="fas fa-envelope"></i> Email us</a>
+           <br> <br>
+           <ul class="social-icons">
+             <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="https://youtu.be/YS1zz7MplJ8?si=4BA3Nna0tDpgY5Zu" target="_blank"><i class="fab fa-youtube"></i></a></li>
+             <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+           </ul>
+         </p>
+       </div>
+       <div class="col-md-4 footer-custom-align footercustom-2-box">
+         <h5>Quick Links</h5>
+         <ul class="footer-links">
+           <li><i class="bx bx-chevron-right"><a href="home.html">Home</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="about.html">About us</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="contact.html">Contact Information</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="cr.html">Customer Reviews</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="login.html">Register</a></i></li>
+         </ul>
+       </div>
+           
+       <div class="col-md-4 footer-custom-align">
+         <h5>Shop</h5>
+         <ul class="footer-links ">
+           <li><i class="bx bx-chevron-right"><a href="ac.html">Air Conditioner</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="refrigerator.html">Refrigerator</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="microwave.html">Microwave oven</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="Water dispancer.html">Water Dispenser</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="led.html">LED TV</a></i></li>
+           <li><i class="bx bx-chevron-right"><a href="machine.html">Washing Machine</a></i></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </footer>
+
+ <script src="js/bootstrap.bundle.min.js" ></script>
+
+ <script>
+     function validateForm(formType) {
+         if (formType === 'register') {
+             var firstName = document.getElementById('registerFirstName').value;
+             var email = document.getElementById('registerEmail').value;
+             var password = document.getElementById('registerPassword').value;
+
+             var firstNameError = document.getElementById('registerFirstNameError');
+             var emailError = document.getElementById('registerEmailError');
+             var passwordError = document.getElementById('registerPasswordError');
+
+             var isValid = true;
+
+             firstNameError.innerHTML = "";
+             emailError.innerHTML = "";
+             passwordError.innerHTML = "";
+
+             if(firstName === ""){
+                 firstNameError.innerHTML = "User Name is required";
+                 isValid = false;
+             }
+             var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+             if(email === ""){
+                 emailError.innerHTML = "Email is required";
+                 isValid = false;
+             } else if (!emailPattern.test(email)) {
+                 emailError.innerHTML = "Invalid email address";
+                 isValid = false;
+             }
+
+             if(password === ""){
+                 passwordError.innerHTML = "Password is required";
+                 isValid = false
+             }
+                 else if (password.length < 8){
+     passwordError.innerHTML = "Password must be at least 8 characters";
+     return false;
+ }
+ var strongpass2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+ if (!strongpass2.test(password)) {
+     passwordError.innerHTML = "Password must contain at least 1 lowercase letter, 1 uppercase letter, 1 digit, and 1 special character";
+     return false;
+ }
+  // Form is valid
+  return true;
+
+
+}}
+</script>
+  
+</body>
+</html>
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costomer Reviews</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://ajax.googleapry/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+   
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #dbddd9;
+  
+}
+
+.wrapper{
+  margin-top: 50px;
+}
+
+.wrapper h2{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: rgb(71, 93, 124);
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 1px;
+  border-radius: 50px;
+}
+
+</style>
+<script>// https://colorlib.com/polygon/adminator/index.html</script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar " id="navbar" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html" id="logo"><span id="span1">H</span>arvel <span>Electronic</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c50;">
+                  <li><a class="dropdown-item" href="refrigerator.html">REFRIGERATOR</a></li>
+                  <li><a class="dropdown-item" href="machine.html">WASHING MACHINE</a></li>
+                  <li><a class="dropdown-item" href="Water dispancer.html"> WATER DISPENSER</a></li>
+                  <li><a class="dropdown-item" href="led.html">LED TV</a></li>
+                  <li><a class="dropdown-item" href="ac.html">AIR CONDITIONER</a></li>
+                  <li><a class="dropdown-item" href="microwave.html">MICROWAVE OVEN</a></li>
+              
+                  
+                 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="icons">
+                <!-- <a href="login.html"><img src="./images/register.png" alt="" width="18px">Login</a> -->
+                <a href="login.html"><img src="./images/register.png" alt="" width="18px">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    
+    <div class="wrapper">
+        <h2>CUSTOMER REVIEWS</h2>
+        <div class="team">
+          <div class="team_member">
+            <div class="team_img">
+              <img src="images/costumer reviews/cr1.avif" alt="Team_image">
+            </div>
+            <h3>Paul </h3>
+            
+            <p>Placed my order online for a Refrigerator. I’m delighted with the radio. It’s extremely straightforward to set up with some great features and the sound quality is superb.
+          </div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="images/costumer reviews/cr3.webp" alt="Team_image">
+            </div>
+            <h3> Megcol</h3>
+            
+            <p>I ordered an pel television, and the website was easy to navigate, and the television was cheaper than other sites. I received a call to discuss delivery, and the call was followed up with an email, and it was delivered on time.</p></div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="images/costumer reviews/cr2.avif" alt="Team_image">
+            </div>
+            <h3>James</h3>
+            
+            <p>Ordered washing machine in a hurry earlier this week, this company has been great, good communication, do everything they say they will and also use great courier!
+
+                Definitely recommend!</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        
+        <div class="team">
+          <div class="team_member">
+            <div class="team_img">
+              <img src="images/costumer reviews/cr4.avif" alt="Team_image">
+            </div>
+            <h3>Ellis</h3>
+            
+            <p>Ordered a vinyl player and was a brilliant price- delivery speedy. Unfortunately after a couple of days - product was jumping and emailed for support. The company were very helpful and communication was great- especially with it being the xmas period. A new replacement needle was sent quickly and vinyl player working great again!</p>
+          </div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="images/costumer reviews/cr 5.avif" alt="Team_image">
+            </div>
+            <h3>Avery</h3>
+            
+            <p> I tried to use it that evening it didnt work properly so dropped them an E-mail the next morning, they were back in touch and arranged a replacement which they delivered the same afternoon (29th) and its all good. Never had such good service and their prices are competitive too</p></div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="images/costumer reviews/cr6.jpeg" alt="Team_image">
+            </div>
+            <h3>Hazel</h3>
+            
+            <p>Placed my order online for a Refrigerator. I’m delighted with the radio. It’s extremely straightforward to set up with some great features and the sound quality is superb.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="offer">
+        <div class="row">
+          <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h3>Free Shipping</h3>
+            <p>On order over 20000 RUPEES</p>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-rotate-left"></i>
+            <h3>Free Returns</h3>
+            <p>Within 20 days</p>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Fast Delivery</h3>
+            <p>World Wide</p>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <h3>Big choice</h3>
+            <p>For you</p>
+          </div>
+        </div>
+      </div>
+
+
+
+ <!-- newslater -->
+<div class="container" id="newslater">
+  <h3 class="text-center">Subscribe To The  Harvel Electronic Shop For Latest upload.</h3>
+  <div class="input text-center">
+    <input type="text" placeholder="Enter Your Email..">
+       <button id="subscribe" class="submit">SUBSCRIBE</button>
+  </div>
+</div>
+<!-- newslater -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h5>About Us</h5>
+      <p>Electronicsforu.com is the digital avatar of Electronics For You (EFY) magazine. EFY was launched in 1969, and is counted amongst the leading publications in the fields of electronics and technology—across the globe.</p> <br>
+      <p>
+        <a href="tel:03152416541"><i class="fas fa-phone"></i> Call us</a>
+        <a href="mailto:farwasadaqat8@gmail.com"><i class="fas fa-envelope"></i> Email us</a>
+        <br> <br>
+        <ul class="social-icons">
+          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://youtu.be/YS1zz7MplJ8?si=4BA3Nna0tDpgY5Zu" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </u>
+      </p>
+    </div>
+    <div class="col-md-4 footer-custom-align footercustom-2-box">
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><i class="bx bx-chevron-right"><a href="home.html">Home</a></i></li>
+        <li><i class="bx bx-chevron-right"><a href="about.html">About us </i></a> </li>
+        <li><i class="bx bx-chevron-right"><a href="contact.html">Contact Information</i></a></li>
+        <li><i class="bx bx-chevron-right"><a href="cr.html">Costomer Reviews </a></i></li>
+        <li><i class="bx bx-chevron-right"><a href="login.html">Register</a></i></li>
+      </ul>
+    </div>
+        
+    <div class="col-md-4  footer-custom-align">
+      <h5>Shop</h5>
+      <ul class="footer-links ">
+        <li><i class="bx bx-chevron-right"><a href="ac.html">Air Conditioner</i></a> </li>
+        <li><i class="bx bx-chevron-right"><a href="refrigerator.html">Refrigerator</i></a></li>
+        <li><i class="bx bx-chevron-right"><a href="microwave.html">Microwave oven</i> </a></li>
+        <li><i class="bx bx-chevron-right"><a href="Water dispancer.html">Water Dispenser</i></a></li>
+        <li><i class="bx bx-chevron-right"><a href="led.html">LED TV</a></i></li>
+        <li><i class="bx bx-chevron-right"><a href="machine.html">Washing Machine</i></a></li> 
+       
+      </ul>
+<br><br><br><br>
+
+
+
+        
+  </div>
+  <br> <br> <br>
+
+</footer>
+
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
